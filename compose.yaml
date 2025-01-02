@@ -19,6 +19,9 @@ services:
     ports:
       - 3000:3000
       - 35729:35729
+    volumes:
+      - ./app:/usr/src/app
+      - /usr/src/app/node_modules
 
   todo-database:
     image: mongo:6
